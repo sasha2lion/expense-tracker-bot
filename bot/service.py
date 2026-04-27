@@ -18,3 +18,6 @@ def format_expenses():
         f"{e['name']} ({e['category']}) - {e['amount']}"
         for e in expenses
     ]
+
+def by_category(cat):
+    return [e for e in expenses if e["category"] == cat]
