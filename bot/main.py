@@ -15,8 +15,8 @@ def handle_command(command):
     except:
         return "Error: use /add name amount category"
 
-    elif parts[0] == "/list":
-        return "\n".join([f"{e['name']} - {e['amount']}" for e in list_expenses()])
+  elif parts[0] == "/list":
+    return "\n".join(format_expenses())
 
     elif parts[0] == "/total":
         return f"Total: {total()}"
