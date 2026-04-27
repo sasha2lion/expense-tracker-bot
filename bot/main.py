@@ -1,3 +1,5 @@
+from bot.service import by_category
+
 from bot.service import format_expenses
 
 from bot.service import add_expense, list_expenses, total
@@ -29,3 +31,9 @@ try:
     amount = float(parts[2])
 except:
     return "Error: use /add name amount"
+
+elif parts[0] == "/category":
+    if len(parts) < 2:
+        return "Use: /category food"
+    result = by_category(parts[1])
+    return "\n".join([f"{e['name']} - {e['amount']}" for e in result])
