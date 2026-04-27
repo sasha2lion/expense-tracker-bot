@@ -31,3 +31,9 @@ tests/
 ## Note
 
 This is a simulation version without Telegram API.
+
+## Tech
+
+- Python
+- CLI simulation
+- Modular architecture
