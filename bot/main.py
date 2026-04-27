@@ -16,3 +16,8 @@ def handle_command(command):
         return f"Total: {total()}"
 
     return "Unknown command"
+
+try:
+    amount = float(parts[2])
+except:
+    return "Error: use /add name amount"
