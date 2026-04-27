@@ -13,3 +13,8 @@ def list_expenses():
 
 def total():
     return sum(e["amount"] for e in expenses)
+def format_expenses():
+    return [
+        f"{e['name']} ({e['category']}) - {e['amount']}"
+        for e in expenses
+    ]
