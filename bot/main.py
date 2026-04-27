@@ -1,3 +1,5 @@
+from bot.service import format_expenses
+
 from bot.service import add_expense, list_expenses, total
 
 def handle_command(command):
