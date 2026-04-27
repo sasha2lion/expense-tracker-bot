@@ -8,3 +8,10 @@ def test_category():
     add_expense("Food", 10, "food")
     result = by_category("food")
     assert len(result) > 0
+
+from bot.service import clear
+
+def test_total():
+    clear()
+    add_expense("Test", 5)
+    assert total() == 5
