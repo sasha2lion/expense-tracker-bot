@@ -1,13 +1,33 @@
 # Expense Tracker Bot (Simulation)
 
-This project simulates a Telegram bot for tracking expenses.
+A simulated Telegram bot for tracking expenses.
 
 ## Features
 
-- Add expense (/add coffee 5)
-- List expenses (/list)
-- Calculate total (/total)
+- Add expenses with category  
+  `/add coffee 5 food`
+- List all expenses  
+  `/list`
+- Show total  
+  `/total`
+- Filter by category  
+  `/category food`
+
+## Example
+
+/add coffee 5 food  
+/add taxi 10 transport  
+/list  
+/total  
+
+## Project Structure
+
+bot/
+  main.py
+  service.py
+
+tests/
 
 ## Note
 
-This is a simplified version without Telegram API.
+This is a simulation version without Telegram API.
