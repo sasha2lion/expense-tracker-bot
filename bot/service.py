@@ -21,3 +21,7 @@ def format_expenses():
 
 def by_category(cat):
     return [e for e in expenses if e["category"] == cat]
+
+def clear():
+    global expenses
+    expenses = []
